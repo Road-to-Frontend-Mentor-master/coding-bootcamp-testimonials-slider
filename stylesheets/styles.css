@@ -1,0 +1,112 @@
+:root {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+
+  --font-family: 'Inter', sans-serif;
+
+  --box-shadow-purple: rgba(36, 36, 133, .29);
+  --slider-controls-height: 40px;
+  --slider-item-header-image-width: 254px;
+  --slider-item-header-padding-top: 54px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+blockquote {
+  margin-left: 0;
+}
+
+.main-container {
+  background-image: url(../images/pattern-curve.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-controls {
+  align-items: center;
+  background-color: white;
+  border-radius: calc(var(--slider-controls-height) / 2);
+  display: flex;
+  height: var(--slider-controls-height);
+  justify-content: space-between;
+  left: 50%;
+  position: absolute;
+  padding: 0 1rem;
+  top: calc(var(--slider-item-header-image-width) + var(--slider-item-header-padding-top) - var(--slider-controls-height) / 2);
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+.slider-controls-arrow {
+  height: 12px;
+  width: 6px;
+}
+
+.slider-list {}
+
+.slider-item {
+  padding: 0 2rem 2rem;
+  text-align: center;
+}
+
+.slider-item-header {
+  background-image: url(../images/pattern-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 2rem;
+  padding: 54px 0 2rem;
+}
+
+.slider-item-header-image {
+  border-radius: 5px;
+  box-shadow: 0 40px 50px var(--box-shadow-purple);
+  width: var(--slider-item-header-image-width);
+}
+
+.slider-item-content {
+  background-image: url(../images/pattern-quotes.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  padding-top: 1rem;
+}
+
+.slider-item-text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 1.25rem;
+}
+
+.slider-item-footer {}
+
+.slider-item-title,
+.slider-item-subtitle {
+  font-size: 15px;
+}
+
+.slider-item-title {}
+
+.slider-item-subtitle {
+  color: var(--grayish-blue);
+}
